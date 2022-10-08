@@ -8,4 +8,9 @@ public class PokemanDeserialiser {
         Gson gson = new Gson();
         gson.fromJson(json, Poken)
     }
+    
+     public Pokemon deSerialiseSinglePokemon(String json) {
+        Gson gson = new Gson();
+        return gson.fromJson(json, Pokemon.class);
+    }
 }
