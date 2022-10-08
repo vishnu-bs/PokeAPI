@@ -4,9 +4,9 @@ import com.google.gson.Gson;
 
 public class PokemanDeserialiser {
 
-    public void deserialise(String json) {
+    public PokemonList deSerialisePokemonList(String json) {
         Gson gson = new Gson();
-        gson.fromJson(json, Poken)
+        return gson.fromJson(json, PokemonList.class);
     }
     
      public Pokemon deSerialiseSinglePokemon(String json) {
